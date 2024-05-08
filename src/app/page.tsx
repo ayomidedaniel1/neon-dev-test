@@ -3,8 +3,11 @@ import { Footer, Hero, Navbar, News, Nft, Profit, Token, Vision } from "./compon
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className="relative">
+        <video src={require('../../public/assets/main.mp4')} autoPlay muted />
+        <Navbar />
+        <Hero />
+      </div>
       <Nft />
       <Profit />
       <Vision />
